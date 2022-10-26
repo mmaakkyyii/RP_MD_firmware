@@ -1,6 +1,10 @@
 # RPMD firmware
+RPMD is motor driver using RP2040.
+
+https://github.com/mmaakkyyii/RP_MD
 
 # Folder structure
+```
 raspi_pico  
     ├─RP_MD_firmware  
     │   ├─build  
@@ -11,7 +15,7 @@ raspi_pico
     │   └─pico_sdk_import.cmake  
     └─pico-sdk  
         └─hogehoge  
-
+```
 # Build
 ```
 cd RP_MD_firmware
