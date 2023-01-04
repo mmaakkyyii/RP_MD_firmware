@@ -24,3 +24,7 @@ cd build
 cmake .. -DPICO_SDK_PATH=/mnt/d/raspi_pico/pico-sdk
 make RPMD
 ```
+
+# ROS
+https://github.com/mmaakkyyii/RP2040_rs485
+
