@@ -15,7 +15,13 @@ add_executable(RPMD
     RPMD.cpp
 )
 
-
+# Create C header file with the name <pio program>.pio.h
+pico_generate_pio_header(${PROJECT_NAME}  
+${CMAKE_CURRENT_LIST_DIR}/pio_rotary_encoder1.pio
+)
+pico_generate_pio_header(${PROJECT_NAME}  
+${CMAKE_CURRENT_LIST_DIR}/pio_rotary_encoder2.pio
+)
 # Add pico_stdlib library which aggregates commonly used features
 target_link_libraries(
     RPMD
@@ -23,6 +29,7 @@ target_link_libraries(
     hardware_pwm
     hardware_adc
     hardware_pio
+    pico_multicore
 )
 
 # create map/bin/hex/uf2 file in addition to ELF.
